@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JackTrip Foundation</title>
+    <!-- style sheet -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Header and nav section -->
+    <header class="header-section">
+        <div class="header-container">
+            <div class="nav-holder" id="nav">
+                <div class="logo">
+                    <a href="#Home">
+                        <img src="images/jt_logo.svg" alt="jacktrip-logo" id="#home">
+                    </a>
+                </div>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <nav class="navigation">
+                    <!-- nav list created dynamically in javascript -->
+                    <ul class="nav-menu" id="nav-menu-id"></ul>
+                    <!-- <button class="get-app-btn">Get the App</button> -->
+                </nav>
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span></span>
+                </label>
+            </div>
+        </div>
+    </header>
+    <!--End of Header and nav section -->
+
+    <!--Home Section-->
+    <section class="home-section" id="Home">
+        <div class="home-container">
+            <div class="heading-landing-text">
+                <div class="main-heading">
+                    <h1 class="heading-text">JackTrip Foundation</h1>
+                    <p class="sub-heading">
+                        The JackTrip Foundation is a collaboration between Stanford University’s Center for Computer
+                        Research in Music and Acoustics (CCRMA) and Silicon Valley software entrepreneurs. JackTrip
+                        Foundation is a 501(c)(3) nonprofit corporation.
+                    </p>
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <div class="numbertext"></div>
+                            <img src="/images/image_4.jpg">
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext"></div>
+                            <img src="/images/image_7.jpg">
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext"></div>
+                            <img src="/images/image_8.jpg">
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End of Home Section-->
+
+    <!-- about section -->
+    <section class="about-section" id="About">
+        <div class="about-container">
+            <img src="#" alt="" class="about-img">
+            <div class="about-text">
+                <h2 class="about-text-header">
+                    JackTrip Foundation
+                </h2>
+                <br>
+                <p class="about-text-sub">
+                    The JackTrip Foundation is a collaboration between Stanford University’s Center for Computer
+                    Research in Music and Acoustics (CCRMA) and Silicon Valley software entrepreneurs. JackTrip
+                    Foundation is a 501(c)(3) nonprofit corporation.
+                </p>
+                <br>
+                <ul class="aside-ul">
+                    <h3>Activities of the Foundation:</h3>
+                    <br>
+                    To fulfill its mission of driving continued innovation of network arts technologies and widespread
+                    adoption, the Foundation will offer a wide array of technology, cultural, educational, and community
+                    services, such as:
+                    <br>
+                    <br>
+                    <li>Grants, scholarships, partnerships, programs and industry leadership related to network arts
+                        technologies;</li>
+                    <li>Educational, cultural and technological programs for artists, scholars, musicians and
+                        technologists to advance innovation;</li>
+                    <li>Internships, work experiences, and other industry opportunities for artists, scholars, musicians
+                        and technologists;</li>
+                    <li>Community-building programs, industry gatherings and events for the broad network arts
+                        community;</li>
+                    <li>Marketing and awareness-building of network arts capabilities worldwide.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="stats">
+            <div class="personal-stat">
+                <p class="stat-number">80,000</p>
+                <p class="stat-text">Studio hours donated</p>
+            </div>
+            <div class="business-stat">
+                <p class="stat-number">100k</p>
+                <p class="stat-text">Artist Connected</p>
+            </div>
+            <div class="country-stat">
+                <p class="stat-number">35+</p>
+                <p class="stat-text">Countries supported</p>
+            </div>
+            <div class="app-stat">
+                <p class="stat-number">30+</p>
+                <p class="stat-text">In-app demos</p>
+            </div>
+        </div>
+    </section>
+    <!-- end of about section -->
+
+    <!-- plans section -->
+    <section class="plans-section" id="Plans">
+        <div class="pricing-plan-viewer">
+            <div class="pricing-plan-container">
+                <div class="pricing-plan" id="plans">
+                    <div class="pricing-plan-header">
+                        <h1 class="pricing-plan-title">Starter</h1>
+                        <h2 class="pricing-plan-summary">For those getting started</h2>
+                    </div>
+                    <div class="pricing-plan-actions">
+                        <p class="pricing-plan-cost">$0.00</p>
+                        <p class="pricing-plan-text">This is the default, pay as you go,<br>monthly plan</p>
+                        <p class="pricing-plan-text">+$1.00 <br>Per studio hour <br>Billed monthly, in 1-minute
+                            increments</p>
+                        <a href="#" class="pricing-plan-button">Get Standard</a>
+                    </div>
+                </div>
+                <div class="pricing-plan pricing-plan--highlighted" id="plans">
+                    <div class="pricing-plan-special_text">Most popular</div>
+                    <div class="pricing-plan-header">
+                        <h1 class="pricing-plan-title">Premium</h1>
+                        <h2 class="pricing-plan-summary">Our Entry level account</h2>
+                    </div>
+                    <div class="pricing-plan-actions">
+                        <p class="pricing-plan-cost">$50.00</p>
+                        <p class="pricing-plan-text">per month flat fee includes up to 100 studio hours</p>
+                        <p class="pricing-plan-text">+$0.60<br>Per additional studio hours about 100<br>Billed monthly,
+                            in 1-minute inscrements</p>
+                        <a href="#" class="pricing-plan-button">Get Premium</a>
+                    </div>
+                </div>
+                <div class="pricing-plan" id="plans">
+                    <div class="pricing-plan-header">
+                        <h1 class="pricing-plan-title">Amphitheater</h1>
+                        <h2 class="pricing-plan-summary">For the serious user</h2>
+                    </div>
+                    <div class="pricing-plan-actions">
+                        <p class="pricing-plan-cost">$500.00</p>
+                        <p class="pricing-plan-text">per month flat fee includes up to 1,500 studio hours</p>
+                        <p class="pricing-plan-text">+$0.40 <br>Per additional studio hour about 1,500<br>Billed
+                            monthly, in 1-minute increments</p>
+                        <a href="#" class="pricing-plan-button">Get Plan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="price-block-1" class="price-block-1 main">
+            <div class="left-side-content title-line">
+                <h3 class="separator dark-text-title mainHead">
+                    Choosing the Right Size Room</h3>
+                <div class="line-sep" style="margin-bottom: 30px;"></div>
+
+                <p class="dark-text ">Whenever you start a virtual studio, you will be asked to verify the desired room
+                    size (see
+                    available room sizes below).<br> Each size room is able to accommodate a range of total musicians.
+                    You'll pay per
+                    minute for the number of musicians connected,<br> or for the room's minimum number of musicians,
+                    whichever is greater.</p>
+                <p class="dark-text"><b>Make sure to choose the correct size room for your group!</b> If the room is too
+                    small,<br> it won't
+                    accommodate all of your musicians. If the room is too big, you'll pay for unused space.</p>
+            </div>
+            <br>
+            <br>
+            <section id="roomSizes" class="roomSizes main">
+                <div class="left-side-content priceTb">
+                    <div class="labelcont">
+                        <div class="tableLabel03"><b>Number of Musicians</b></div>
+                    </div>
+                    <table class="rwd-table">
+                        <tr>
+                            <th style="padding: 10px 50px;">Room Sizes</th>
+                            <th style="padding: 10px 50px;">Minimum</th>
+                            <th style="padding: 10px 50px;">Maximum</th>
+                        </tr>
+                        <tr>
+                            <td data-th="col1">Extra Small</td>
+                            <td data-th="col3">2</td>
+                            <td data-th="col4">10</td>
+                        </tr>
+                        <tr>
+                            <td data-th="col1">Small</td>
+                            <td data-th="col3">10</td>
+                            <td data-th="col4">20</td>
+                        </tr>
+                        <tr>
+                            <td data-th="col1">Medium</td>
+                            <td data-th="col3">20</td>
+                            <td data-th="col4">40</td>
+                        </tr>
+
+                        <tr>
+                            <td data-th="col1">Large</td>
+                            <td data-th="col3">40</td>
+                            <td data-th="col4">80</td>
+                        </tr>
+
+                        <tr>
+                            <td data-th="col1">Extra Large</td>
+                            <td data-th="col3">80</td>
+                            <td data-th="col4">180</td>
+                        </tr>
+
+                        <tr>
+                            <td data-th="col1">Double Extra Large</td>
+                            <td data-th="col3">180</td>
+                            <td data-th="col4">240</td>
+                        </tr>
+
+                        <tr>
+                            <td data-th="col1">Triple Extra Large</td>
+                            <td data-th="col3">240</td>
+                            <td data-th="col4">360</td>
+                        </tr>
+
+                        <tr>
+                            <td data-th="col1">Quadruple Extra Large</td>
+                            <td data-th="col3">360</td>
+                            <td data-th="col4">480</td>
+
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </section>
+    </section>
+    <!-- end of plans section -->
+
+    <!-- help section -->
+    <section class="help-section" id="Help">
+        <div class="help-container">
+            <h2 class="help-qestion">How can we help?</h2>
+            <div class="faq-box">
+                <p class="faq-heading">FAQs</p>
+                <div class="faqs">
+                    <details class="faq-details">
+                        <summary class="faq-summary">Community</summary>
+                        <p class="faq-text">Visit our <a href="#">Community</a> page to learn more.</p>
+                    </details>
+                    <details class="faq-details">
+                        <summary class="faq-summary">Support</summary>
+                        <p class="faq-text">Visit our <a href="#">Support</a> page to learn more.</p>
+                    </details>
+                    <details class="faq-details">
+                        <summary class="faq-summary">Submit a Request</summary>
+                        <p class="faq-text">Visit our <a href="#">Request</a> page to learn more.</p>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of help section -->
+
+    <!--Start of sign up section-->
+    <section class="signup-section" id="Sign Up">
+        <form action="#">
+            <div class="signup-box">
+                <h1>SIGN UP</h1>
+                <div class="icon">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <div class="formcontainer">
+                    <div class="container">
+                        <label for="uname"><strong>Username</strong></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+                        <label for="mail"><strong>E-mail</strong></label>
+                        <input type="text" placeholder="Enter E-mail" name="mail" required>
+                        <label for="psw"><strong>Password</strong></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                    </div>
+                    <button type="submit"><strong>SIGN UP</strong></button>
+                    <div class="container" style="background-color: #eee">
+                        <label style="padding-left: 15px">
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                        <span class="psw"><a href="#">Forgot password?</a></span>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+    <!--end of sign up section-->
+
+    <!-- footer section -->
+    <footer class="footer-section">
+        <footer class="footer-section">
+            <div class="footer-holder">
+                <div class="footer-container">
+                    <div class="sec aboutus">
+                        <h2 class="aboutus-text">About Us</h2>
+                        <p class="aboutus-p">The JackTrip Foundation is a collaboration between Stanford University’s
+                            Center for Computer Research in Music and Acoustics (CCRMA) and Silicon Valley software
+                            entrepreneurs. JackTrip Foundation is a 501(c)(3) nonprofit corporation.</p>
+                        <ul class="social-media">
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="sec quick-links">
+                        <h2 class="aboutus-text">Quick Links</h2>
+                        <ul class="quick-links-list">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Terms and Conditions</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="sec contact">
+                        <h2 class="aboutus-text">Contact Info</h2>
+                        <ul class="contact-info">
+                            <li>
+                                <span><i class="fas fa-map-marked-alt"></i></span>
+                                <span>Adress<br>
+                                    City, Zip Code<br>US</span>
+                            </li>
+                            <li>
+                                <span><i class="fas fa-phone-square"></i></span>
+                                <p><a href="tel:+(123)4567890">+(123)456 7890</a><br>
+                                    <a href="tel:+(123)4567890">+(123)456 7890</a>
+                                </p>
+                            </li>
+                            <li>
+                                <span><i class="fas fa-envelope-square"></i></span>
+                                <p><a href="emailto:help@help.com">help@help.com</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright-text">
+            <p>Copyright © 2021. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- end of footer section -->
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
