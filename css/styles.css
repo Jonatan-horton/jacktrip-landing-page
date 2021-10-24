@@ -1,5 +1,5 @@
-@import url(css/slider.css);
-@import url(css/signup.css);
+@import url(signup.css);
+@import url(slider.css);
 
 :root {
     --grey-text-color:#8A959E;
