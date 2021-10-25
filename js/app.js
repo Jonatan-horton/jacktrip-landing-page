@@ -44,7 +44,6 @@ function navHighlighted() {
     ){
       document.querySelector(".navigation a[href*=" + sectionId + "]").classList.add("active");
     } else {
-      // console.log(".navigation a[href*=" + sectionId + "]");
       document.querySelector(".navigation a[href*=" + sectionId + "]").classList.remove("active");
     }
   });
