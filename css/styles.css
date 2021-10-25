@@ -122,28 +122,6 @@ html {
     transition: opacity 250ms ease-in-out 250ms;
 }
 
-/* get app button styles */
-.get-app-btn {
-    width: 150px;
-    height: 50px;
-    border: none;
-    border-radius: 15px;
-    font-size: 1em;
-    letter-spacing: 1px;
-    background-color: #F61B1B;
-    color: #FFF;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.get-app-btn:focus { 
-    outline: none; 
-}
-
-.get-app-btn:hover {
-    background-color: #495057;
-}
-
 /* home styles */
 .swiper {
     width: 600px;

@@ -1,6 +1,6 @@
 // This code block creates a nav list dynamically
 const navList = document.querySelector('.nav-menu');
-const navMenu = ['Home', 'About', 'Plans', 'Help', 'Sign Up'];
+const navMenu = ['Home', 'About', 'Plans', 'Help', 'Register'];
 
 // code fragment to help with performance of website
 const fragment = new DocumentFragment();
@@ -44,6 +44,7 @@ function navHighlighted() {
     ){
       document.querySelector(".navigation a[href*=" + sectionId + "]").classList.add("active");
     } else {
+      // console.log(".navigation a[href*=" + sectionId + "]");
       document.querySelector(".navigation a[href*=" + sectionId + "]").classList.remove("active");
     }
   });
