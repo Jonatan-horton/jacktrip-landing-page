@@ -213,9 +213,9 @@ html {
     color: var(--grey-text-color);
 }
 /* plans styles */
-.plans-section {
+/* .plans-section {
     height: 250vh;
-}
+} */
 
 .pricing-plan-container {
     max-width: 1300px;
@@ -743,9 +743,9 @@ td, th {
     }
 
     /* plans media styles */
-    .plans-section {
+    /* .plans-section {
         height: 100vh;
-    }
+    } */
     
     .pricing-plan-container {
         padding-top: 100px;
