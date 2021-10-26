@@ -1,19 +1,31 @@
 // This code block creates a nav list dynamically
 const navList = document.querySelector('.nav-menu');
-const navMenu = ['Home', 'About', 'Plans', 'Help', 'Register'];
+
+const navMenu = [];
+const sectionElements = document.querySelectorAll('section');
+sectionElements.forEach(function (section) {
+  const sectionId = section.getAttribute('id');
+  navMenu.push(sectionId);
+});
+
+// const navMenu = ['Home', 'About', 'Plans', 'Help', 'Register'];
 
 // code fragment to help with performance of website
 const fragment = new DocumentFragment();
 
 navMenu.forEach(function (navItem) {
     const navA = document.createElement('a');
+    const secEl = document.querySelector("#" + navItem);
     navA.innerHTML = navItem;
     navA.setAttribute('class', 'current');
+    navA.setAttribute('onclick', secEl.scrollIntoView());
     navA.setAttribute('href', `#${navItem}`);
     const navLink = document.createElement('li');
     navLink.appendChild(navA);
-    fragment.appendChild(navLink);
-})
+    fragment.append(navLink);
+});
+
+
 
 navList.appendChild(fragment);
 
@@ -49,12 +61,13 @@ function navHighlighted() {
   });
 }
 
+
 /* This code makes the slider switch photos every 4 secs */
-var slideIndex = 0;
+let slideIndex = 0;
 showSlides();
 function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
