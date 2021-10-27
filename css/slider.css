@@ -1,13 +1,20 @@
 .slideshow-container {
+  box-sizing: content-box;
     padding-top: 1rem;
-    max-width: auto;
-    max-height: 1000px;
+    max-width: 100%;
+    max-height: auto;
     position: relative;
     margin: auto;
   }
-.mySlides{
-    image-resolution: 300%;
+
+  .mySlides{
+    image-resolution: 100%;
 }
+
+/* .img {
+  width: 100%;
+  height: auto;
+} */
   /* Next & previous buttons */
   .prev,
   .next {
