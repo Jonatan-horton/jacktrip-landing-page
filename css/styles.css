@@ -7,11 +7,11 @@
     --lightest-grey-color:#E0E1F0;
 }
 
-*, *::before, *::after {
+/* *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
+} */
 
 body {
     font-family: 'Inter', sans-serif;
@@ -159,9 +159,9 @@ html {
 }
 
 /* about styles */
-.about-section {
+/* .about-section {
     height: 100vh;
-}
+} */
 
 .about-container {
     max-width: 1300px;
@@ -194,7 +194,7 @@ html {
 }
 
 .stats {
-    max-width: 1250px;
+    max-width: 1300px;
     margin: auto;
     padding-top: 20px;
     display: flex;
@@ -365,9 +365,9 @@ td, th {
 }
 
 /* help section */
-.help-section {
+/* .help-section {
     height: 100vh;
-}
+} */
 
 .help-container {
     max-width: 1300px;
@@ -377,6 +377,7 @@ td, th {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 450px;
 }
 
 .help-container .help-qestion {
@@ -447,7 +448,7 @@ td, th {
 
 /* footer section */
 .footer-section {
-    display: flex;
+    /* display: flex; */
     justify-content: flex-end;
     align-items: center;
     min-height: 30vh;
