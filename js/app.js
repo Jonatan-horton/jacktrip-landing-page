@@ -18,12 +18,13 @@ navMenu.forEach(function (navItem) {
     const secEl = document.querySelector("#" + navItem);
     navA.innerHTML = navItem;
     navA.setAttribute('class', 'current');
-    navA.setAttribute('onclick', secEl.scrollIntoView());
     navA.setAttribute('href', `#${navItem}`);
     const navLink = document.createElement('li');
     navLink.appendChild(navA);
     fragment.append(navLink);
 });
+
+navList.appendChild(fragment);
 
 window.scrollTo({
   top: 100,
@@ -31,7 +32,22 @@ window.scrollTo({
   behavior: "smooth"
 });
 
-navList.appendChild(fragment);
+const links = document.querySelectorAll(".nav-menu a");
+
+for (const link of links){
+  link.addEventListener("click", clickHandler);
+}
+
+function clickHandler(e){
+  e.preventDefault();
+  const href = this.getAttribute("href");
+  const offsetTop = document.querySelector(href).offsetTop;
+
+  scrollTo({
+    top: offsetTop,
+    behavior: "smooth"
+  });
+}
 
 // get all sections that have an ID defined
 const sections = document.querySelectorAll("section[id]");
