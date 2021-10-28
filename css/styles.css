@@ -23,12 +23,14 @@ html {
 
 /* header styles */
 .sticky .nav-holder {
+    margin: 0px;
     padding-top: 5px;
     background: #FFF;
     z-index: 10000;
 }
 
 .nav-holder {
+    margin: 0px;
     text-align: center;
     position: fixed;
     width: 100%;
@@ -389,7 +391,7 @@ td, th {
 }
 
 .faq-box {
-    width: 200px;
+    width: 350px;
     margin: auto;
     background: #FFF;
     border-radius: 15px;
@@ -636,6 +638,10 @@ td, th {
         width: 400px;
     }
 
+    .signup-box{
+        width: 400px;
+    }
+
 }
 
 /* large and above */
@@ -646,6 +652,7 @@ td, th {
     }
 
     .nav-holder {
+        margin: 0px;
         padding-top: 30px;
         display: grid;
         grid-template-columns: 1fr auto minmax(600px, 10fr) 1fr;
