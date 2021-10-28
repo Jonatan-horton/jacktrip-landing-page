@@ -18,10 +18,6 @@ body {
     margin: 0px;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 /* header styles */
 .sticky .nav-holder {
     margin: 0px;
