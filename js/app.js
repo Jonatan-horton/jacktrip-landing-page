@@ -15,17 +15,20 @@ const fragment = new DocumentFragment();
 
 navMenu.forEach(function (navItem) {
     const navA = document.createElement('a');
-    const secEl = document.querySelector("#" + navItem);
+    // const secEl = document.querySelector("#" + navItem);
     navA.innerHTML = navItem;
     navA.setAttribute('class', 'current');
-    navA.setAttribute('onclick', secEl.scrollIntoView());
+    // navA.setAttribute('onclick', secEl.scrollIntoView());
     navA.setAttribute('href', `#${navItem}`);
     const navLink = document.createElement('li');
     navLink.appendChild(navA);
     fragment.append(navLink);
 });
 
-
+window.scrollTo({
+  top: 100,
+  behavior: "smooth"
+});
 
 navList.appendChild(fragment);
 
