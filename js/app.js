@@ -8,8 +8,6 @@ sectionElements.forEach(function (section) {
   navMenu.push(sectionId);
 });
 
-// const navMenu = ['Home', 'About', 'Plans', 'Help', 'Register'];
-
 // code fragment to help with performance of website
 const fragment = new DocumentFragment();
 
@@ -26,6 +24,7 @@ navMenu.forEach(function (navItem) {
 
 navList.appendChild(fragment);
 
+// code to to make sure that webpage scrolls smoothly
 window.scrollTo({
   top: 100,
   left: 100,
