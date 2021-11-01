@@ -38,19 +38,19 @@ button:hover {
     }
 
 .signup-section{
-    /* height: 75vh; */
+    margin: auto;
     padding: 20px;
+    padding-top: 200px;
 }
 .signup-box {
-        width: 200px;
+        width: auto;
         margin: 0 auto;
-        /* margin: auto; */
-        /* margin-top: 100px; */
         background: #FFF;
         border-radius: 15px;
         box-shadow: 0 0 5px rgba(0,0,0, 0.2);
         transition: 0.5s;
         z-index: 1000;
+        width: 330px;
     }
 .signup-box .signup-heading {
         background: #F61B1B;
@@ -99,8 +99,3 @@ button:hover {
 .signup-details .signup-summary {
         outline: none;
     }
-
-.signup-box {
-        width: 400px;
-    }
-    
