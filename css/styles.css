@@ -121,9 +121,6 @@ body {
     width: 600px;
     height: 300px;
   }
-/* .home-section {
-    height: 100vh;
-} */
 
 .home-container {
     max-width: 1300px;
@@ -152,10 +149,6 @@ body {
 }
 
 /* about styles */
-/* .about-section {
-    height: 100vh;
-} */
-
 .about-container {
     max-width: 1300px;
     padding-top: 100px;
@@ -205,11 +198,8 @@ body {
     padding: 10px 5px;
     color: var(--grey-text-color);
 }
-/* plans styles */
-/* .plans-section {
-    height: 250vh;
-} */
 
+/* plans styles */
 .pricing-plan-container {
     max-width: 1300px;
     margin: auto;
@@ -287,7 +277,6 @@ body {
 }
 
 .pricing-plan-feature::before{
-    /* content: "\2714"; */
     color: #707070;
     position: absolute;
     left: 0;
@@ -347,6 +336,7 @@ body {
 } 
 
 .rwd-table{
+    display: flex;
     padding-left: 25%;
     align-items: center;
 }
@@ -358,12 +348,13 @@ td, th {
 }
 
 /* help section */
-/* .help-section {
-    height: 100vh;
-} */
+.help-section {
+    display: flex;
+    padding-top:10rem;
+}
 
 .help-container {
-    max-width: 1300px;
+    max-width: auto;
     padding-top: 100px;
     margin: auto;
     display: flex;
@@ -452,7 +443,6 @@ td, th {
     position: relative;
     width: 100%;
     height: auto;
-    padding: 50px;
     background: rgb(255, 0, 0);
     display: flex;
     justify-content: space-between;
@@ -460,11 +450,11 @@ td, th {
 }
 
 .footer-container {
+    width: auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: column;
-    padding-right: 100px;
 }
 
 .footer-container .sec {
@@ -501,6 +491,7 @@ td, th {
 .social-media {
     margin-top: 20px;
     display: flex;
+    width: 80%;
 }
 
 .social-media li {
@@ -583,12 +574,15 @@ td, th {
     transition: 0.2s;
 }
 
+.fas{
+    padding-top: 1rem;
+}
+
 .contact .contact-info li a:hover {
     color: #FFF;
 }
 
 .copyright-text {
-    width: 100%;
     background: #181818;
     padding: 8px 40px;
     text-align: center;
